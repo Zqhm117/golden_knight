@@ -42,21 +42,20 @@ public class EmployeeController {
 
         //3、如果没有查询到则返回登录失败结果
         if(emp == null){
-            return R.error("登录失败");
+            return R.error("登录失败!");
         }
 
         //4、密码比对，如果不一致则返回登录失败结果
         if(!emp.getPassword().equals(password)){
-            return R.error("登录失败");
+            return R.error("密码不正确!");
         }
 
-        //5、查看员工状态，如果为已禁用状态，则返回员工已禁用结果
+        //5、查看员工状态，如果为已禁用状态，则返回员工已禁用结果  0:禁用 1:启用
         if(emp.getStatus() == 0){
-            return R.error("账号已禁用");
+            return R.error("该账号已禁用!");
         }
 
         //6、登录成功，将员工id存入Session并返回登录成功结果
-        request.getSession().setAttribute("employee",emp.getId());
         return R.success(emp);
     }
 
