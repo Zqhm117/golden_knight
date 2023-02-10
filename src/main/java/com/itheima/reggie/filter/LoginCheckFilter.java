@@ -12,55 +12,65 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 检查用户是否登录
+ * 检查用户是否已经完成登录
  */
 @WebFilter(filterName = "loginCheckFilter",urlPatterns = "/*")
 @Slf4j
-public class LoginCheckFilter implements Filter {
-    //路径匹配器
+public class LoginCheckFilter implements Filter{
+    //路径匹配器，支持通配符
     public static final AntPathMatcher PATH_MATCHER = new AntPathMatcher();
+
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        HttpServletRequest httpServletRequest = (HttpServletRequest) request;
-        HttpServletResponse httpServletResponse = (HttpServletResponse) response;
-        //获取本次URI请求
-        String requestURI = httpServletRequest.getRequestURI();
-        log.info("检查（过滤）到请求:{}",requestURI);
-        //设置不需要经过过滤器的路径
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+
+        //1、获取本次请求的URI
+        String requestURI = request.getRequestURI();// /backend/index.html
+
+        log.info("拦截到请求：{}",requestURI);
+
+        //定义不需要处理的请求路径
         String[] urls = new String[]{
                 "/employee/login",
                 "/employee/logout",
                 "/backend/**",
                 "/front/**"
         };
-        //判断请求是否需要处理
-        boolean flag = check(urls,requestURI);
-        if(flag){
+
+        //2、判断本次请求是否需要处理
+        boolean check = check(urls, requestURI);
+
+        //3、如果不需要处理，则直接放行
+        if(check){
             log.info("本次请求{}不需要处理",requestURI);
-            chain.doFilter(httpServletRequest,httpServletResponse);
+            filterChain.doFilter(request,response);
             return;
         }
-        //已登录，则不需要处理
-        if(httpServletRequest.getSession().getAttribute("employee") != null){
-            log.info("用户已登录，用户id为：{}",httpServletRequest.getSession().getAttribute("employee"));
-            chain.doFilter(request,response);
+
+        //4、判断登录状态，如果已登录，则直接放行
+        if(request.getSession().getAttribute("employee") != null){
+            log.info("用户已登录，用户id为：{}",request.getSession().getAttribute("employee"));
+            filterChain.doFilter(request,response);
             return;
         }
-        //未登录，返回提示信息
+
         log.info("用户未登录");
-        httpServletResponse.getWriter().write(JSON.toJSONString(R.error("NOTLOGIN")));
+        //5、如果未登录则返回未登录结果，通过输出流方式向客户端页面响应数据
+        response.getWriter().write(JSON.toJSONString(R.error("未登录")));
         return;
+
     }
 
     /**
-     * 检查路径是否放行
+     * 路径匹配，检查本次请求是否需要放行
      * @param urls
      * @param requestURI
      * @return
      */
-    private boolean check(String[] urls, String requestURI) {
+    public boolean check(String[] urls,String requestURI){
         for (String url : urls) {
-            boolean match = PATH_MATCHER.match(url,requestURI);
+            boolean match = PATH_MATCHER.match(url, requestURI);
             if(match){
                 return true;
             }
