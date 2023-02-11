@@ -43,20 +43,21 @@ public class EmployeeController {
 
         //3、如果没有查询到则返回登录失败结果
         if(emp == null){
-            return R.error("登录失败!");
+            return R.error("登录失败");
         }
 
         //4、密码比对，如果不一致则返回登录失败结果
         if(!emp.getPassword().equals(password)){
-            return R.error("密码不正确!");
+            return R.error("登录失败");
         }
 
-        //5、查看员工状态，如果为已禁用状态，则返回员工已禁用结果  0:禁用 1:启用
+        //5、查看员工状态，如果为已禁用状态，则返回员工已禁用结果
         if(emp.getStatus() == 0){
-            return R.error("该账号已禁用!");
+            return R.error("账号已禁用");
         }
 
         //6、登录成功，将员工id存入Session并返回登录成功结果
+        request.getSession().setAttribute("employee",emp.getId());
         return R.success(emp);
     }
 
@@ -79,21 +80,18 @@ public class EmployeeController {
      */
     @PostMapping
     public R<String> save(HttpServletRequest request,@RequestBody Employee employee){
-        log.info("新增员工，员工信息：{}",employee.toString());
+        log.info("新增员工信息：{}",employee.toString());
 
-        //设置初始密码123456，需要进行md5加密处理
         employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
 
         employee.setCreateTime(LocalDateTime.now());
         employee.setUpdateTime(LocalDateTime.now());
 
-        //获得当前登录用户的id
         Long empId = (Long) request.getSession().getAttribute("employee");
-
         employee.setCreateUser(empId);
         employee.setUpdateUser(empId);
 
         employeeService.save(employee);
-        return R.success("新增员工成功");
+        return R.success("新增成功");
     }
 }

@@ -38,6 +38,7 @@ public class LoginCheckFilter implements Filter{
                 "/front/**"
         };
 
+
         //2、判断本次请求是否需要处理
         boolean check = check(urls, requestURI);
 
@@ -57,7 +58,7 @@ public class LoginCheckFilter implements Filter{
 
         log.info("用户未登录");
         //5、如果未登录则返回未登录结果，通过输出流方式向客户端页面响应数据
-        response.getWriter().write(JSON.toJSONString(R.error("未登录")));
+        response.getWriter().write(JSON.toJSONString(R.error("NOTLOGIN")));
         return;
 
     }
