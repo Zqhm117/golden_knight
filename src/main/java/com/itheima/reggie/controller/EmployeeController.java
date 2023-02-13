@@ -78,11 +78,11 @@ public class EmployeeController {
         log.info("新增员工， 员工信息：{}", employee.toString());
         //设置初始密码123456需要MD5加密处理
         employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
-        employee.setCreateTime(LocalDateTime.now());  // 记录创建时间
-        employee.setUpdateTime(LocalDateTime.now());  // 记录更新时间
-        Long empID = (Long) request.getSession().getAttribute("employee");  //获得当前登录用户id，强转
-        employee.setCreateUser(empID);  //设置是谁创建的用户
-        employee.setUpdateUser(empID);  //设置是谁更新的用户
+        //employee.setCreateTime(LocalDateTime.now());  // 记录创建时间
+        //employee.setUpdateTime(LocalDateTime.now());  // 记录更新时间
+        //Long empID = (Long) request.getSession().getAttribute("employee");  //获得当前登录用户id，强转
+        //employee.setCreateUser(empID);  //设置是谁创建的用户
+        //employee.setUpdateUser(empID);  //设置是谁更新的用户
 
         //2、Service调用Mapper操作数据库，保存数据
         employeeService.save(employee);
@@ -122,5 +122,20 @@ public class EmployeeController {
         employee.setUpdateUser(empId);  // 记录修改员工的用户
         employeeService.updateById(employee);
         return null;
+    }
+
+    /**
+     * 根据ID查询员工信息
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public R<Employee> getById(@PathVariable Long id){
+        log.info("根据ID查询员工信息：...");
+        Employee employee = employeeService.getById(id);
+        if(employee != null){
+            return R.success(employee);
+        }
+        return R.error("没有查询到员工");
     }
 }
