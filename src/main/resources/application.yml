@@ -18,3 +18,5 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: ASSIGN_ID
+goldenKnight:
+  path: E:\Java_Learning\golden_knight\src\main\resources\uploadImages\
