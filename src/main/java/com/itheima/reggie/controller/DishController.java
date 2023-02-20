@@ -37,11 +37,12 @@ public class DishController {
 
     /**
      * 新增菜品
+     *
      * @param dishDto
      * @return
      */
     @PostMapping
-    public R<String> save(@RequestBody DishDto dishDto){
+    public R<String> save(@RequestBody DishDto dishDto) {
         log.info(dishDto.toString());
         dishService.saveWithFlavor(dishDto);
         return R.success("新增菜品成功!");
@@ -49,32 +50,37 @@ public class DishController {
 
     /**
      * 菜品分页查询
+     *
      * @param page
      * @param pageSize
      * @param name
      * @return
      */
     @GetMapping("/page")
-    public R<Page> page(int page,int pageSize,String name){
-        Page<Dish> pageInfo = new Page(page,pageSize);
+    public R<Page> page(int page, int pageSize, String name) {
+        Page<Dish> pageInfo = new Page(page, pageSize);
         Page<DishDto> dishDtoPage = new Page<>();
 
         LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        dishLambdaQueryWrapper.like(StringUtils.isNotEmpty(name),Dish::getName,name);
+        dishLambdaQueryWrapper.like(StringUtils.isNotEmpty(name), Dish::getName, name);
         dishLambdaQueryWrapper.orderByDesc(Dish::getUpdateTime);
-        dishService.page(pageInfo,dishLambdaQueryWrapper);
+        dishService.page(pageInfo, dishLambdaQueryWrapper);
 
         //对象拷贝 pageInfo->dishDtoPage
-        BeanUtils.copyProperties(pageInfo,dishDtoPage,"records");
+        BeanUtils.copyProperties(pageInfo, dishDtoPage, "records");
         List<Dish> records = pageInfo.getRecords();//Page类型中，records即为所需的list集合
         //页面展示中，显示的是菜品分类名称，需要通过id查找到对象并将菜品分类名称取出
-        List<DishDto> list = records.stream().map((item)->{
+        List<DishDto> list = records.stream().map((item) -> {
             DishDto dishDto = new DishDto();
-            BeanUtils.copyProperties(item,dishDto);
+            BeanUtils.copyProperties(item, dishDto);
             Long categoryId = item.getCategoryId();
             Category category = categoryService.getById(categoryId);
-            String categoryName = category.getName();
-            dishDto.setCategoryName(categoryName);
+
+            if(category!=null){
+                String categoryName = category.getName();
+                dishDto.setCategoryName(categoryName);
+            }
+
             return dishDto;
         }).collect(Collectors.toList());
 
@@ -84,22 +90,24 @@ public class DishController {
 
     /**
      * 获取菜品信息
+     *
      * @param id
      * @return
      */
     @GetMapping("/{id}")
-    public R<DishDto> getDishInfo(@PathVariable Long id){
+    public R<DishDto> getDishInfo(@PathVariable Long id) {
         DishDto dishDto = dishService.getByIdWithFlavor(id);
         return R.success(dishDto);
     }
 
     /**
      * 修改菜品信息
+     *
      * @param dishDto
      * @return
      */
     @PutMapping
-    public R<String> update(@RequestBody DishDto dishDto){
+    public R<String> update(@RequestBody DishDto dishDto) {
         log.info(dishDto.toString());
         dishService.updateWithFlavor(dishDto);
         return R.success("修改菜品信息成功！");
@@ -107,11 +115,12 @@ public class DishController {
 
     /**
      * 根据分类id查询菜品分类下对应的菜品
+     *
      * @param dish
      * @return
      */
     @GetMapping("/list")
-    public R<List<Dish>> list(Dish dish){
+    /*public R<List<Dish>> list(Dish dish){
         LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(Dish::getCategoryId,dish.getCategoryId());
         queryWrapper.eq(Dish::getStatus,1);
@@ -119,5 +128,35 @@ public class DishController {
         queryWrapper.orderByDesc(Dish::getUpdateTime);
         List<Dish> dishList = dishService.list(queryWrapper);
         return R.success(dishList);
+    }*/
+    public R<List<DishDto>> list(Dish dish) {
+        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(Dish::getCategoryId, dish.getCategoryId());
+        queryWrapper.eq(Dish::getStatus, 1);
+
+        queryWrapper.orderByAsc(Dish::getSort);
+        queryWrapper.orderByDesc(Dish::getUpdateTime);
+        List<Dish> dishList = dishService.list(queryWrapper);
+
+        //页面展示中，显示的是菜品分类名称，需要通过id查找到对象并将菜品分类名称取出
+        List<DishDto> list = dishList.stream().map((item) -> {
+            DishDto dishDto = new DishDto();
+            BeanUtils.copyProperties(item, dishDto);
+            Long categoryId = item.getCategoryId();
+            Category category = categoryService.getById(categoryId);
+            if(category!=null){
+                String categoryName = category.getName();
+                dishDto.setCategoryName(categoryName);
+            }
+            //当前菜品id
+            Long dishId = item.getId();
+            LambdaQueryWrapper<DishFlavor> flavorLambdaQueryWrapper = new LambdaQueryWrapper<>();
+            flavorLambdaQueryWrapper.eq(DishFlavor::getDishId,dishId);
+            List<DishFlavor> dishFlavorList = dishFlavorService.list(flavorLambdaQueryWrapper);
+            dishDto.setFlavors(dishFlavorList);
+            return dishDto;
+        }).collect(Collectors.toList());
+
+        return R.success(list);
     }
 }

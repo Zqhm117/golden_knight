@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9eaff61b-f424-439c-ad24-951fd7fe35f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderDetailServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/StartApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/BaseContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/CustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/JacksonObjectMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/MyMetaObjecthandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/config/MybatisPlusConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/config/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/AddressBookController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/CategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/CommonController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/DishController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/EmployeeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/OrderDetailServiceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/SetmealController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/ShoppingCartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/dto/DishDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/dto/SetmealDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/AddressBook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Dish.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/DishFlavor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/OrderDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Orders.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Setmeal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/SetmealDish.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/ShoppingCart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/filter/LoginCheckFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/AddressBookMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/CategoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/DishFlavorMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/DishMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/EmployeeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/OrderDetailMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/OrderMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/SetmealDishMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/SetmealMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/ShoppingCartMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/AddressBookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/CategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/DishFlavorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/DishService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/EmployeeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/OrderDetailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/SetmealDishService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/SetmealService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/ShoppingCartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/AddressBookServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/DishFlavorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/DishServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/OrderDetailServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/SetmealDishServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/SetmealServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/ShoppingCartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/SMSUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/ValidateCodeUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/SetmealController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\Java_Learning\golden_knight\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\develop\Repository" />
+        <option name="mavenHome" value="D:/develop/maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\develop\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LP9eqcrzb6ZP9EkOie2s2Re8d7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java_Learning\golden_knight\src\main\java\com\itheima\reggie\entity" />
+      <recent name="E:\Java_Learning\golden_knight\src\main\java\com\itheima\reggie\service\impl" />
+      <recent name="E:\Java_Learning\golden_knight\src\main\java\com\itheima\reggie\service" />
+      <recent name="E:\Java_Learning\golden_knight\src\main\java\com\itheima\reggie\mapper" />
+      <recent name="E:\Java_Learning\golden_knight\src\main\java\com\itheima\reggie\controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ReggieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="golden_knight" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.reggie.StartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eaff61b-f424-439c-ad24-951fd7fe35f2" name="Default Changelist" comment="" />
+      <created>1675761948058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675761948058</updated>
+      <workItem from="1675761950402" duration="1238000" />
+      <workItem from="1675763208995" duration="44000" />
+      <workItem from="1675763263944" duration="50000" />
+      <workItem from="1675763345651" duration="626000" />
+      <workItem from="1675763995875" duration="20000" />
+      <workItem from="1675764045790" duration="847000" />
+      <workItem from="1675832581573" duration="640000" />
+      <workItem from="1675834738073" duration="231000" />
+      <workItem from="1675838387335" duration="126000" />
+      <workItem from="1675838583931" duration="11000" />
+      <workItem from="1675839828471" duration="137000" />
+      <workItem from="1675839999191" duration="31000" />
+      <workItem from="1675840032606" duration="5335000" />
+      <workItem from="1676008974882" duration="9961000" />
+      <workItem from="1676019944579" duration="319000" />
+      <workItem from="1676020270016" duration="2702000" />
+      <workItem from="1676135911668" duration="88000" />
+      <workItem from="1676136061331" duration="3741000" />
+      <workItem from="1676139848964" duration="82000" />
+      <workItem from="1676177975875" duration="597000" />
+      <workItem from="1676180679813" duration="13218000" />
+      <workItem from="1676268405790" duration="120000" />
+      <workItem from="1676268687478" duration="2000" />
+      <workItem from="1676272761821" duration="195000" />
+      <workItem from="1676273349679" duration="127000" />
+      <workItem from="1676273772328" duration="2000" />
+      <workItem from="1676273991225" duration="294000" />
+      <workItem from="1676274440126" duration="4351000" />
+      <workItem from="1676279183552" duration="815000" />
+      <workItem from="1676439772416" duration="5299000" />
+      <workItem from="1676445721366" duration="1599000" />
+      <workItem from="1676447346273" duration="7118000" />
+      <workItem from="1676525714839" duration="1018000" />
+      <workItem from="1676526745875" duration="14955000" />
+      <workItem from="1676615450889" duration="2928000" />
+      <workItem from="1676618836642" duration="219000" />
+      <workItem from="1676619070810" duration="4291000" />
+      <workItem from="1676624947388" duration="69000" />
+      <workItem from="1676625032163" duration="138000" />
+      <workItem from="1676625238727" duration="570000" />
+      <workItem from="1676697113576" duration="597000" />
+      <workItem from="1676795509510" duration="598000" />
+      <workItem from="1676869143391" duration="6182000" />
+      <workItem from="1676880592816" duration="6008000" />
+      <workItem from="1676886767093" duration="4321000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改项目名字">
+      <created>1675763439254</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675763439254</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".gitignore添加">
+      <created>1675764115225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675764115225</updated>
+    </task>
+    <task id="LOCAL-00003" summary="用户的登录/登出功能">
+      <created>1676015448086</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676015448087</updated>
+    </task>
+    <task id="LOCAL-00004" summary="过滤器">
+      <created>1676015504066</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676015504066</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加注解扫描过滤器">
+      <created>1676017239165</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676017239165</updated>
+    </task>
+    <task id="LOCAL-00006" summary="添加注解扫描过滤器">
+      <created>1676022812747</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676022812747</updated>
+    </task>
+    <task id="LOCAL-00007" summary="新增员工功能&#10;新增全局异常处理通用类">
+      <created>1676139680441</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676139680441</updated>
+    </task>
+    <task id="LOCAL-00008" summary="MybatisPlus分页插件">
+      <created>1676183172472</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676183172472</updated>
+    </task>
+    <task id="LOCAL-00009" summary="员工信息分页查询">
+      <created>1676184428057</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676184428057</updated>
+    </task>
+    <task id="LOCAL-00010" summary="新增消息转化器，用于解决long类型精度丢失">
+      <created>1676190301352</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676190301352</updated>
+    </task>
+    <task id="LOCAL-00011" summary="使用ThreadLocal完善公共字段自动填充">
+      <created>1676193765979</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676193765979</updated>
+    </task>
+    <task id="LOCAL-00012" summary="新增分类功能">
+      <created>1676195671494</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676195671494</updated>
+    </task>
+    <task id="LOCAL-00013" summary="分类模块：分页查询、删除、修改功能">
+      <created>1676279971040</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676279971040</updated>
+    </task>
+    <task id="LOCAL-00014" summary="菜品：新增菜品、修改菜品、菜品分页信息查询（包含文件上传下载）">
+      <created>1676454714533</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676454714533</updated>
+    </task>
+    <task id="LOCAL-00015" summary="套餐模块：新增、删除（包含批量删除）">
+      <created>1676536798099</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676536798099</updated>
+    </task>
+    <task id="LOCAL-00016" summary="套餐模块：套餐售卖状态修改（启/停售）、套餐内容修改">
+      <created>1676541540961</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1676541540961</updated>
+    </task>
+    <task id="LOCAL-00017" summary="移动端：验证码登录（含注册）、地址簿功能">
+      <created>1676624842108</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676624842108</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改项目名字" />
+    <MESSAGE value=".gitignore添加" />
+    <MESSAGE value="用户的登录/登出功能" />
+    <MESSAGE value="过滤器" />
+    <MESSAGE value="添加注解扫描过滤器" />
+    <MESSAGE value="新增员工功能&#10;新增全局异常处理通用类" />
+    <MESSAGE value="MybatisPlus分页插件" />
+    <MESSAGE value="员工信息分页查询" />
+    <MESSAGE value="新增消息转化器，用于解决long类型精度丢失" />
+    <MESSAGE value="使用ThreadLocal完善公共字段自动填充" />
+    <MESSAGE value="新增分类功能" />
+    <MESSAGE value="分类模块：分页查询、删除、修改功能" />
+    <MESSAGE value="菜品：新增菜品、修改菜品、菜品分页信息查询（包含文件上传下载）" />
+    <MESSAGE value="套餐模块：新增、删除（包含批量删除）" />
+    <MESSAGE value="套餐模块：套餐售卖状态修改（启/停售）、套餐内容修改" />
+    <MESSAGE value="移动端：验证码登录（含注册）、地址簿功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="移动端：验证码登录（含注册）、地址簿功能" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="67" key="#Notifications" timestamp="1676183141503">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="361" y="67" key="#Notifications/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676183141503" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1676887964239">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676887964239" />
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1676619943971">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676619943971" />
+    <state x="504" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1676887307023">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="504" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676887307023" />
+    <state x="668" y="5" width="773" height="811" key="CommitChangelistDialog2" timestamp="1676624835054">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="668" y="5" width="773" height="811" key="CommitChangelistDialog2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676624835054" />
+    <state x="80" y="71" key="DiffContextDialog" timestamp="1676022890451">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="80" y="71" key="DiffContextDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676022890451" />
+    <state x="549" y="150" key="FileChooserDialogImpl" timestamp="1676618786265">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="150" key="FileChooserDialogImpl/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676618786265" />
+    <state x="619" y="299" key="Github.ShareDialog" timestamp="1675763009925">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="619" y="299" key="Github.ShareDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1675763009925" />
+    <state x="428" y="114" key="Github.UntrackedFilesDialog" timestamp="1675762221764">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="428" y="114" key="Github.UntrackedFilesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1675762221764" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1676890443323">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1676890443322">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443322" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1676890443322">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443322" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1676890443323">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
+    <state width="1493" height="205" key="GridCell.Tab.1.bottom" timestamp="1676890443323">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.1.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
+    <state width="1493" height="205" key="GridCell.Tab.1.center" timestamp="1676890443323">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.1.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
+    <state width="1493" height="205" key="GridCell.Tab.1.left" timestamp="1676890443323">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.1.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
+    <state width="1493" height="205" key="GridCell.Tab.1.right" timestamp="1676890443323">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.1.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
+    <state width="1493" height="231" key="GridCell.Tab.2.bottom" timestamp="1676625016097">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.2.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676625016097" />
+    <state width="1493" height="231" key="GridCell.Tab.2.center" timestamp="1676625016097">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.2.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676625016097" />
+    <state width="1493" height="231" key="GridCell.Tab.2.left" timestamp="1676625016097">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.2.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676625016097" />
+    <state width="1493" height="231" key="GridCell.Tab.2.right" timestamp="1676625016097">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.2.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676625016097" />
+    <state x="299" y="64" key="Maven.ArtifactSearchDialog" timestamp="1676616716268">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="299" y="64" key="Maven.ArtifactSearchDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676616716268" />
+    <state x="561" y="131" key="RollbackChangesDialog" timestamp="1676020399773">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="561" y="131" key="RollbackChangesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676020399773" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1675840027363">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1675840027363" />
+    <state x="283" y="143" width="835" height="532" key="Vcs.Push.Dialog.v2" timestamp="1676624852141">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="283" y="143" width="835" height="532" key="Vcs.Push.Dialog.v2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676624852141" />
+    <state x="476" y="155" key="VcsDiffUtil.ChangesDialog" timestamp="1676020293000">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="476" y="155" key="VcsDiffUtil.ChangesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676020293000" />
+    <state x="109" y="112" width="1336" height="616" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1676020321151">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="109" y="112" width="1336" height="616" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676020321151" />
+    <state x="562" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1676020234786">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="562" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676020234786" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1676190763871">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676190763871" />
+  </component>
+</project>
