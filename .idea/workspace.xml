@@ -2,92 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eaff61b-f424-439c-ad24-951fd7fe35f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderDetailServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/ShoppingCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/entity/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/mapper/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/mapper/ShoppingCartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/OrderDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/ShoppingCartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/StartApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/BaseContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/CustomException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/JacksonObjectMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/MyMetaObjecthandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/R.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/config/MybatisPlusConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/config/WebMvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/AddressBookController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/CategoryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/CommonController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/DishController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/EmployeeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/OrderDetailServiceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/SetmealController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/ShoppingCartController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/dto/DishDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/dto/SetmealDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/AddressBook.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Dish.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/DishFlavor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/OrderDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Orders.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/Setmeal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/SetmealDish.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/ShoppingCart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/filter/LoginCheckFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/AddressBookMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/CategoryMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/DishFlavorMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/DishMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/EmployeeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/OrderDetailMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/OrderMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/SetmealDishMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/SetmealMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/ShoppingCartMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/AddressBookService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/CategoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/DishFlavorService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/DishService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/EmployeeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/OrderDetailService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/SetmealDishService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/SetmealService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/ShoppingCartService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/AddressBookServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/DishFlavorServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/DishServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/EmployeeServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/OrderDetailServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/SetmealDishServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/SetmealServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/ShoppingCartServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/SMSUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/ValidateCodeUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/AddressBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/AddressBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/AddressBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/AddressBookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/OrderController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +173,8 @@
       <workItem from="1676795509510" duration="598000" />
       <workItem from="1676869143391" duration="6182000" />
       <workItem from="1676880592816" duration="6008000" />
-      <workItem from="1676886767093" duration="4321000" />
+      <workItem from="1676886767093" duration="4411000" />
+      <workItem from="1676957134596" duration="7002000" />
     </task>
     <task id="LOCAL-00001" summary="修改项目名字">
       <created>1675763439254</created>
@@ -375,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676624842108</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="移动端：菜品展示、购物车功能、订单的部分功能">
+      <created>1676891862241</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676891862241</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +348,8 @@
     <MESSAGE value="套餐模块：新增、删除（包含批量删除）" />
     <MESSAGE value="套餐模块：套餐售卖状态修改（启/停售）、套餐内容修改" />
     <MESSAGE value="移动端：验证码登录（含注册）、地址簿功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="移动端：验证码登录（含注册）、地址簿功能" />
+    <MESSAGE value="移动端：菜品展示、购物车功能、订单的部分功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="移动端：菜品展示、购物车功能、订单的部分功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="67" key="#Notifications" timestamp="1676183141503">
@@ -432,18 +360,18 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676887964239" />
-    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1676619943971">
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1676962509386">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676619943971" />
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676962509386" />
     <state x="504" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1676887307023">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="504" y="254" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676887307023" />
-    <state x="668" y="5" width="773" height="811" key="CommitChangelistDialog2" timestamp="1676624835054">
+    <state x="668" y="5" width="773" height="811" key="CommitChangelistDialog2" timestamp="1676891858433">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="668" y="5" width="773" height="811" key="CommitChangelistDialog2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676624835054" />
+    <state x="668" y="5" width="773" height="811" key="CommitChangelistDialog2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676891858433" />
     <state x="80" y="71" key="DiffContextDialog" timestamp="1676022890451">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -460,38 +388,38 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="428" y="114" key="Github.UntrackedFilesDialog/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1675762221764" />
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1676890443323">
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
-    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1676890443322">
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443322" />
-    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1676890443322">
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443322" />
-    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1676890443323">
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
-    <state width="1493" height="205" key="GridCell.Tab.1.bottom" timestamp="1676890443323">
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
+    <state width="1493" height="205" key="GridCell.Tab.1.bottom" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.1.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
-    <state width="1493" height="205" key="GridCell.Tab.1.center" timestamp="1676890443323">
+    <state width="1493" height="205" key="GridCell.Tab.1.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
+    <state width="1493" height="205" key="GridCell.Tab.1.center" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.1.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
-    <state width="1493" height="205" key="GridCell.Tab.1.left" timestamp="1676890443323">
+    <state width="1493" height="205" key="GridCell.Tab.1.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
+    <state width="1493" height="205" key="GridCell.Tab.1.left" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.1.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
-    <state width="1493" height="205" key="GridCell.Tab.1.right" timestamp="1676890443323">
+    <state width="1493" height="205" key="GridCell.Tab.1.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
+    <state width="1493" height="205" key="GridCell.Tab.1.right" timestamp="1676964700618">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.1.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676890443323" />
+    <state width="1493" height="205" key="GridCell.Tab.1.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676964700618" />
     <state width="1493" height="231" key="GridCell.Tab.2.bottom" timestamp="1676625016097">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -520,10 +448,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1675840027363" />
-    <state x="283" y="143" width="835" height="532" key="Vcs.Push.Dialog.v2" timestamp="1676624852141">
+    <state x="283" y="143" width="835" height="532" key="Vcs.Push.Dialog.v2" timestamp="1676891877638">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="283" y="143" width="835" height="532" key="Vcs.Push.Dialog.v2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676624852141" />
+    <state x="283" y="143" width="835" height="532" key="Vcs.Push.Dialog.v2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1676891877638" />
     <state x="476" y="155" key="VcsDiffUtil.ChangesDialog" timestamp="1676020293000">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

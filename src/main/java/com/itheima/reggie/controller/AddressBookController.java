@@ -9,6 +9,7 @@ import com.itheima.reggie.entity.AddressBook;
 import com.itheima.reggie.service.AddressBookService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -101,5 +102,38 @@ public class AddressBookController {
 
         //SQL:select * from address_book where user_id = ? order by update_time desc
         return R.success(addressBookService.list(queryWrapper));
+    }
+
+    /**
+     * 修改地址
+     * @param addressBook
+     * @return
+     */
+    @PutMapping
+    @Transactional
+    public R<String> update(@RequestBody AddressBook addressBook){
+        log.info("addressBook:{}",addressBook);
+        //联系人、性别、手机号、收货地址、标签
+        LambdaUpdateWrapper<AddressBook> updateWrapper = new LambdaUpdateWrapper<>();
+        updateWrapper.eq(AddressBook::getId,addressBook.getId());
+        updateWrapper.set(AddressBook::getConsignee,addressBook.getConsignee())
+                .set(AddressBook::getSex,addressBook.getSex())
+                .set(AddressBook::getPhone,addressBook.getPhone())
+                .set(AddressBook::getDetail,addressBook.getDetail())
+                .set(AddressBook::getLabel,addressBook.getLabel());
+        addressBookService.update(updateWrapper);
+        return R.success("操作成功");
+    }
+
+    /**
+     * 根据id删除地址
+     * @param ids
+     * @return
+     */
+    @DeleteMapping
+    public R<String> removeById(Long ids){
+        log.info("需要删除的地址对应id为:{}",ids);
+        addressBookService.removeById(ids);
+        return R.success("删除成功");
     }
 }
