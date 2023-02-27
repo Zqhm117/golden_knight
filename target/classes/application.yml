@@ -4,6 +4,11 @@ spring:
   application:
     #应用的名称，可选
     name: golden_knight
+  redis:
+    host: 192.168.200.100
+    port: 6379
+    password: 123456
+    database: 0
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
